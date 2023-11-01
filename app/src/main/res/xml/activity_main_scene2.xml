@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000"
+        motion:motionInterpolator="cubic(0.22,0.34,0.82,0.73)">
+       <KeyFrameSet>
+       </KeyFrameSet>
+        <OnSwipe motion:touchAnchorId="@+id/recyclerViewID" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            motion:layout_editor_absoluteY="371dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/scrollView2"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="205dp"
+            android:layout_marginRight="205dp" />
+        <Constraint
+            motion:layout_editor_absoluteY="371dp"
+            android:id="@+id/scrollView3"
+            android:layout_width="wrap_content"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:layout_height="100dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="200dp"
+            android:id="@+id/imageView3"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/recyclerViewID"
+            android:layout_marginTop="32dp" />
+        <Constraint
+            motion:layout_editor_absoluteY="371dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/textView8" />
+        <Constraint
+            motion:layout_editor_absoluteY="371dp"
+            android:id="@+id/textView9" />
+        <Constraint
+            motion:layout_editor_absoluteY="517dp"
+            motion:layout_editor_absoluteX="206dp"
+            android:id="@+id/button2" />
+        <Constraint
+            motion:layout_editor_absoluteY="472dp"
+            motion:layout_editor_absoluteX="77dp"
+            android:id="@+id/button" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/sliderImage"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="3dp"
+            motion:layout_constraintTop_toBottomOf="@+id/cardView1"
+            android:layout_marginStart="3dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="3dp" />
+    </ConstraintSet>
+</MotionScene>

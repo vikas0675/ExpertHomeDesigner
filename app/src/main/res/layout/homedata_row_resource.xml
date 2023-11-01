@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imageHome"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/homed1" />
+
+
+
+            <TextView
+                android:id="@+id/houseName"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:text="house Name"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/cost"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:text="cost"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/houseName" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/grayBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageHome" />
+
+            <ImageButton
+                android:id="@+id/btnStar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/star_border_purple500_24" />
+
+            <ImageView
+                android:id="@+id/btnWhatsp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/btnStar"
+                app:layout_constraintEnd_toStartOf="@+id/btnStar"
+                app:layout_constraintTop_toTopOf="@+id/btnStar"
+                app:srcCompat="@drawable/whatsapp" />
+
+            <ImageView
+                android:id="@+id/imageViewA1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view"
+                app:srcCompat="@drawable/send_24" />
+
+            <TextView
+                android:id="@+id/PA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="PA"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewA1"
+                app:layout_constraintStart_toEndOf="@+id/imageViewA1"
+                app:layout_constraintTop_toTopOf="@+id/imageViewA1" />
+
+            <ImageView
+                android:id="@+id/imageViewA2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewA1"
+                app:srcCompat="@drawable/send_24" />
+
+            <TextView
+                android:id="@+id/GFA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="GFA"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewA2"
+                app:layout_constraintStart_toEndOf="@+id/imageViewA2"
+                app:layout_constraintTop_toTopOf="@+id/imageViewA2" />
+
+            <ImageView
+                android:id="@+id/imageViewA3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewA2"
+                app:srcCompat="@drawable/send_24" />
+
+            <TextView
+                android:id="@+id/FFA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="FFA"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewA3"
+                app:layout_constraintStart_toEndOf="@+id/imageViewA3"
+                app:layout_constraintTop_toTopOf="@+id/imageViewA3" />
+
+            <ImageView
+                android:id="@+id/imageViewA4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewA3"
+                app:srcCompat="@drawable/send_24" />
+
+            <TextView
+                android:id="@+id/TotalFL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="TOAL FLOR AREA"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewA4"
+                app:layout_constraintStart_toEndOf="@+id/imageViewA4"
+                app:layout_constraintTop_toTopOf="@+id/imageViewA4" />
+
+            <ImageView
+                android:id="@+id/imageViewA5"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewA4"
+                app:srcCompat="@drawable/send_24" />
+
+            <TextView
+                android:id="@+id/BAB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="BED AND BATH"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewA5"
+                app:layout_constraintStart_toEndOf="@+id/imageViewA5"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewA4" />
+
+            <ImageView
+                android:id="@+id/imageViewA6"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewA5"
+                app:srcCompat="@drawable/send_24" />
+
+            <TextView
+                android:id="@+id/GFD"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:text="GFD Details"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewA6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageViewA6"
+                app:layout_constraintTop_toTopOf="@+id/imageViewA6" />
+
+            <ImageView
+                android:id="@+id/imageViewA7"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewA6"
+                app:srcCompat="@drawable/send_24" />
+
+            <TextView
+                android:id="@+id/FFD"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:text="FFD Details "
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewA7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageViewA7"
+                app:layout_constraintTop_toTopOf="@+id/imageViewA7" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
